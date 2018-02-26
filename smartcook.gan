@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Smart Cook" company="" webLink="http://" view-date="2018-01-28" view-index="0" gantt-divider-location="602" resource-divider-location="300" version="2.8.5" locale="es">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="272" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="163" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="163" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"><![CDATA[New Year's Day]]></date>
+        <date year="" month="1" date="6" type="HOLIDAY"><![CDATA[Epiphany]]></date>
+        <date year="" month="5" date="1" type="HOLIDAY"><![CDATA[Labour Day]]></date>
+        <date year="" month="8" date="15" type="HOLIDAY"><![CDATA[Assumption Day]]></date>
+        <date year="" month="10" date="12" type="HOLIDAY"><![CDATA[Hispanic Day]]></date>
+        <date year="" month="11" date="1" type="HOLIDAY"><![CDATA[All Saints Day]]></date>
+        <date year="" month="12" date="6" type="HOLIDAY"><![CDATA[Constitution Day]]></date>
+        <date year="" month="12" date="8" type="HOLIDAY"><![CDATA[Immaculate Conception Day]]></date>
+        <date year="" month="12" date="25" type="HOLIDAY"><![CDATA[Christmas Day]]></date>
+        <date year="2016" month="3" date="24" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2016" month="3" date="25" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+        <date year="2017" month="1" date="2" type="HOLIDAY"><![CDATA[New Year's Holiday]]></date>
+        <date year="2017" month="4" date="13" type="HOLIDAY"><![CDATA[Maundy Thursday]]></date>
+        <date year="2017" month="4" date="14" type="HOLIDAY"><![CDATA[Good Friday]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="11" name="FASE 4" meeting="false" start="2018-01-29" duration="29" complete="0" expand="true">
+            <task id="12" name="Modelo" color="#8cb6ce" meeting="false" start="2018-01-29" duration="7" complete="0" expand="true" cost-manual-value="5.0" cost-calculated="false"/>
+            <task id="13" name="BBDD" color="#8cb6ce" meeting="false" start="2018-02-05" duration="7" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
+            <task id="14" name="Pagina inicio" color="#8cb6ce" meeting="false" start="2018-02-05" duration="11" complete="0" expand="true" cost-manual-value="20.0" cost-calculated="false">
+                <notes><![CDATA[Login y registro]]></notes>
+            </task>
+            <task id="16" name="Perfil" color="#8cb6ce" meeting="false" start="2018-02-22" duration="11" complete="0" expand="true" cost-manual-value="25.0" cost-calculated="false">
+                <notes><![CDATA[Pagina de perfil]]></notes>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Ivan" function="SoftwareDevelopment:2" contacts="ivanseguileyton@gmail.com" phone="">
+            <rate name="standard" value="20"/>
+        </resource>
+        <resource id="1" name="Tania" function="SoftwareDevelopment:2" contacts="" phone="">
+            <rate name="standard" value="20"/>
+        </resource>
+        <resource id="2" name="Manel" function="SoftwareDevelopment:2" contacts="" phone="">
+            <rate name="standard" value="20"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="12" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
